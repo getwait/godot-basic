@@ -14,7 +14,6 @@ func _ready() -> void:
 	var coounter = 0
 	for player in 2:
 		var duck = load("character_body_2d.tscn")
-		var camera = $Camera2D
 		var player_instance: CharacterBody2D = duck.instantiate()
 		player_instance.scale = Vector2(0.8, 0.8)  # La mitad de tamaño
 		player_instance.floor_stop_on_slope = false
